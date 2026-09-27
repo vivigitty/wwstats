@@ -24,11 +24,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 1. Install Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # 2. Build the Observable Framework site into site/dist
       - name: Install dependencies & Build
         run: |
           cd site
@@ -38,6 +40,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # 3. Upload the generated site/dist directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
