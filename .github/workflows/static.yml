@@ -24,30 +24,41 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 1. Setup Node.js for Observable Framework
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: 'site/package-lock.json'
 
-      # Step 1: Move into /site and build the dist folder
+      # 2. Setup Python environment
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Install required Python packages for data loaders
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      # 4. Install Node dependencies & Build Observable site
       - name: Install dependencies & Build
         working-directory: ./site
         run: |
-          npm ci
+          npm install
           npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Step 2: Upload the newly generated dist directory
+      # 5. Upload built static site output
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'site/dist'
 
-      # Step 3: Deploy to GitHub Pages
+      # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
