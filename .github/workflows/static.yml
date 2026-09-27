@@ -24,28 +24,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. Install Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'site/package-lock.json'
 
-      # 2. Build the site inside the /site directory
+      # Step 1: Move into /site and build the dist folder
       - name: Install dependencies & Build
         working-directory: ./site
         run: |
-          npm install
+          npm ci
           npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # 3. Upload the newly created site/dist output directory
+      # Step 2: Upload the newly generated dist directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'site/dist'
 
+      # Step 3: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
