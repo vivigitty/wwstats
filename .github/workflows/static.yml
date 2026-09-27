@@ -30,17 +30,17 @@ jobs:
         with:
           node-version: 20
 
-      # 2. Build the Observable Framework site into site/dist
+      # 2. Build the site inside the /site directory
       - name: Install dependencies & Build
+        working-directory: ./site
         run: |
-          cd site
           npm install
           npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # 3. Upload the generated site/dist directory
+      # 3. Upload the newly created site/dist output directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
