@@ -1,0 +1,36 @@
+match_id,date,opposition,venue,result,captain,Win loss Margin,batted_first,our_runs,our_wickets,our_overs,opp_runs,opp_wickets,opp_overs,match_overs
+21158832,2026-01-01,MCC Avadi,"Mvr Ground - A, Chennai",Lost,Vivek H,32 runs,No,120,10,18.4,152,6,20.0,20.0
+21175590,2026-01-03,Dark Knight,"Mvr Ground - A, Chennai",Won,Vivek H,164 runs,Yes,226,8,30.0,62,10,17.4,30.0
+21360655,2026-01-17,Padma Sarangapani CA.,"STAG Cricket Ground, Chennai",Lost,Daniel,162 runs,No,108,10,25.0,270,5,30.0,30.0
+21373843,2026-01-10,NOS,"PSM Sports Village, Chennai",Won,Daniel,12 runs,Yes,184,1,20.0,172,6,20.0,20.0
+22101156,2026-01-31,Elite X1,"STAG Cricket Ground, Chennai",Lost,Seenu,5 wickets,Yes,175,9,30.0,178,5,24.5,30.0
+22369880,2026-02-14,Tiger cc Reunited,"PSM Sports Village, Chennai",Lost,Seenu,60 runs,No,189,9,30.0,249,6,30.0,30.0
+22527107,2026-02-21,Dark Knight,"Mvr Ground - A, Chennai",Won,K Natarajan,20 runs,Yes,160,8,25.0,140,10,23.2,25.0
+22774423,2026-02-28,Vintage-XI,"RCA Cricket C Ground, Avadi",Won,K Natarajan,3 wickets,No,215,7,29.2,211,7,30.0,30.0
+22836685,2026-03-07,Royals CC,"Sun Sports Park Turf, Chennai",Lost,K Natarajan,12 runs,No,151,10,22.1,163,10,29.1,29.1
+22880223,2026-03-28,Vibrant Knights,"PSM Sports Village, Chennai",Lost,Prasad Sk,62 runs,No,171,10,27.4,233,7,30.0,30.0
+23036235,2026-03-14,Sarpatta Parambarai CC,"Mvr Ground - A, Chennai",Lost,K Natarajan,4 wickets,Yes,162,10,29.4,167,6,22.5,29.4
+23174502,2026-03-21,GJCC XI,"PSM Sports Village, Chennai",Lost,Prasad Sk,134 runs,No,195,8,30.0,329,9,30.0,30.0
+23600874,2026-04-11,Peppy Inns CC,"STAG Cricket Ground, Chennai",Lost,Seenu,9 wickets,Yes,136,9,30.0,138,1,17.2,30.0
+23672045,2026-04-04,REAL PATRIOTS 11,"RCA Cricket C Ground, Avadi",Lost,Seenu,7 wickets,Yes,176,8,30.0,177,3,18.4,30.0
+24001485,2026-04-18,Wolfpack,"Puratham Magna Cricket Ground, Chennai",Won,Seenu,47 runs,Yes,189,10,29.4,142,10,21.2,29.4
+24011448,2026-04-25,Old Monk CC,"PSM Sports Village, Chennai",Lost,Seenu,5 wickets,Yes,208,10,29.1,211,5,25.2,29.1
+24386449,2026-05-02,All Star X1S,"Mvr Ground - A, Chennai",Lost,Seenu,149 runs,No,57,10,15.3,206,8,30.0,30.0
+24579299,2026-05-09,Tiger CC (Reunited,"STAG Cricket Ground, Chennai",Lost,Seenu,13 runs,No,196,8,25.0,209,8,25.0,25.0
+24647310,2026-05-16,Final Destination,"RCA Cricket C Ground, Avadi",Lost,Seenu,2 wickets,Yes,157,10,29.2,159,8,27.2,29.2
+25304101,2026-06-06,Magi CC,"STAG Cricket Ground, Chennai",Won,Seenu,15 runs,Yes,215,8,30.0,200,8,30.0,30.0
+25393080,2026-06-13,Red Rockets Cricket Club,"PSM Sports Village, Chennai",Won,Seenu,41 runs (Rain Stopped Play,Yes,173,8,20.0,132,5,17.3,20.0
+25517711,2026-06-27,ACES 11,"STAG Cricket Ground, Chennai",Lost,Seenu,145 runs,No,118,10,17.0,263,10,30.0,30.0
+25546850,2026-06-20,Strike Back XI,"Sun Sports Park Turf, Chennai",Won,Seenu,78 runs,Yes,249,6,30.0,171,10,28.5,30.0
+25844623,2026-07-04,Red Devils CC,"PSM Sports Village, Chennai",Lost,Seenu,237 runs,No,66,10,19.0,303,9,30.0,30.0
+26061249,2026-07-11,Sarpatta Parambarai CC,"Mvr Ground - A, Chennai",Lost,Seenu,11 runs,No,187,7,30.0,197,9,30.0,30.0
+26109515,2026-07-18,The Royal Warriors,"PSM Sports Village, Chennai",Won,Seenu,26 runs,Yes,270,7,30.0,244,9,30.0,30.0
+26407392,2026-08-01,Ramji Cricket Academy,"RCA CRICKET B GROUND, Avadi",Won,Seenu,5 wickets,No,114,5,15.3,110,10,23.4,23.4
+26447912,2026-08-08,35mm Cricket Club,"Mvr Ground - A, Chennai",Won,Seenu,87 runs,Yes,189,6,25.0,102,9,25.0,25.0
+26630548,2026-08-22,Thiruverkadu United Cricket Club,"Puratham Magna Cricket Ground, Chennai",Won,Seenu,14 runs,Yes,122,10,19.1,108,10,19.5,19.5
+26729361,2026-08-29,YCC Legends XI,"STAG Cricket Ground, Chennai",Lost,Seenu,71 runs,No,191,6,30.0,262,8,30.0,30.0
+26970646,2026-09-05,Rising Phoenix Cc11,"White Jersey Ground, Avadi",Lost,Seenu,5 wickets,Yes,187,10,26.4,188,5,28.2,28.2
+26975860,2026-09-19,Royals CC,"STAG Cricket Ground, Chennai",Lost,Seenu,8 runs,No,193,6,30.0,201,10,29.3,30.0
+27080490,2026-09-12,Muscle Warriors Cricket Club,"White Jersey Ground, Avadi",Won,Seenu,3 wickets,No,217,7,29.3,213,6,30.0,30.0
+27127481,2026-09-13,Michael Cricket Club,"PSM Sports Village, Chennai",Lost,Seenu,3 wickets,Yes,132,9,20.0,133,7,19.4,20.0
+27306026,2026-09-26,SCC Viveka,"Vivekananda College Cricket Ground, Chennai",Won,Seenu,6 wickets,No,116,4,16.4,113,9,20.0,20.0

@@ -1,0 +1,24 @@
+{
+  "name": "weekend-wickets-site",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "observable preview",
+    "build": "observable build",
+    "clean": "observable build --clean"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.0",
+    "@observablehq/plot": "^0.6.17",
+    "d3": "^7.9.0",
+    "htl": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "esbuild@0.28.2": true
+  }
+}
