@@ -1,8 +1,3 @@
----
-
-### 2. Updated `style.css`
-
-```css
 @import url("observablehq:default.css");
 @import url("observablehq:theme-glacier.css");
 @import url("observablehq:theme-near-midnight.css");
@@ -119,143 +114,6 @@
 
 .kpi.good .kpi-value { color: var(--ww-accent); }
 .kpi.bad .kpi-value { color: var(--ww-loss); }
-
-/* ----------------------------------------------------------- summary 4-col */
-
-.summary-4col {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-@media (max-width: 1024px) {
-  .summary-4col {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .summary-4col {
-    grid-template-columns: 1fr;
-  }
-}
-
-.summary-card {
-  background: var(--ww-panel);
-  border: 1px solid var(--ww-border);
-  border-radius: 12px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.summary-card-header {
-  border-bottom: 1px solid var(--ww-border);
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.75rem;
-}
-
-.summary-card-header h3 {
-  margin: 0;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
-  color: var(--ww-accent);
-}
-
-.summary-card .board {
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-.more-btn {
-  width: 100%;
-  margin-top: 0.85rem;
-  padding: 0.45rem 0.8rem;
-  font: inherit;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--ww-accent);
-  background: color-mix(in srgb, var(--ww-accent) 8%, transparent);
-  border: 1px solid color-mix(in srgb, var(--ww-accent) 40%, transparent);
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.more-btn:hover {
-  background: var(--ww-accent);
-  color: #ffffff;
-}
-
-/* ---------------------------------------------------- collapsible sections */
-
-.filter-disclosure {
-  background: var(--ww-panel);
-  border: 1px solid var(--ww-border);
-  border-radius: 12px;
-  margin-bottom: 1.2rem;
-  overflow: hidden;
-}
-
-.filter-summary {
-  padding: 0.75rem 1rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  user-select: none;
-  color: var(--theme-foreground);
-  transition: background 0.2s ease;
-}
-
-.filter-summary:hover {
-  background: color-mix(in srgb, var(--ww-accent) 10%, transparent);
-}
-
-.detail-section {
-  background: var(--ww-panel);
-  border: 1px solid var(--ww-border);
-  border-radius: 12px;
-  margin: 1.2rem 0;
-  padding: 0.5rem 1rem 1rem;
-}
-
-.detail-section[open] {
-  padding-bottom: 1.2rem;
-}
-
-.detail-section-header {
-  cursor: pointer;
-  padding: 0.6rem 0;
-  font-weight: 600;
-  user-select: none;
-  display: flex;
-  align-items: baseline;
-  gap: 0.6rem;
-}
-
-.detail-section-header h2 {
-  display: inline;
-  margin: 0;
-  font-size: 1.15rem;
-  color: var(--ww-accent);
-}
-
-.detail-section-header .hint {
-  color: var(--ww-muted);
-  font-size: 0.8rem;
-}
-
-.table-subheading {
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ww-muted);
-  margin: 1.2rem 0 0.5rem;
-}
 
 /* ----------------------------------------------------------------- records */
 
@@ -435,9 +293,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
   gap: 0.6rem 0.9rem;
-  background: transparent;
-  border: none;
+  background: var(--ww-panel);
+  border: 1px solid var(--ww-border);
+  border-radius: 12px;
   padding: 0.85rem 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .filter-bar label { font-size: 0.75rem; }
@@ -467,9 +327,7 @@
 /* ------------------------------------------------------------------- print */
 
 @media print {
-  .filter-disclosure, .ww-footer, .print-hide, .more-btn { display: none !important; }
-  .detail-section { display: block !important; border: none !important; padding: 0 !important; }
-  .detail-section summary { display: none !important; }
+  .filter-bar, .ww-footer, .print-hide { display: none !important; }
   .panel, .kpi, .record, .board { break-inside: avoid; }
   .section-title { break-after: avoid; }
 }
