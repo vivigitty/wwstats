@@ -79,6 +79,11 @@ const span = played
   : "No matches in range";
 ```
 
+<nav class="ww-nav print-hide">
+  <a href="./" class="active">Season Summary</a>
+  <a href="./player">Individual Player Profile</a>
+</nav>
+
 <div class="masthead">
   <div>
     <div class="eyebrow">Weekend Wickets</div>
