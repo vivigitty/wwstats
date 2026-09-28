@@ -331,3 +331,72 @@
   .panel, .kpi, .record, .board { break-inside: avoid; }
   .section-title { break-after: avoid; }
 }
+/* ------------------------------------------------- collapsible filters */
+
+.filter-panel {
+  background: var(--ww-panel);
+  border: 1px solid var(--ww-border);
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.filter-panel > summary {
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.filter-panel > summary::-webkit-details-marker { display: none; }
+.filter-panel > summary::before { content: "▸ "; color: var(--ww-accent); }
+.filter-panel[open] > summary::before { content: "▾ "; }
+.filter-panel > summary .hint { color: var(--ww-muted); font-weight: 400; font-size: 0.78rem; }
+
+/* filter-bar sits inside the panel now, so drop its own frame */
+.filter-panel .filter-bar {
+  border: none;
+  border-top: 1px solid var(--ww-border);
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 0;
+  background: transparent;
+}
+
+/* ------------------------------------------- four equal-height columns */
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+  align-items: stretch;          /* every column takes the tallest height */
+}
+
+.top-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.top-head {
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  padding: 0 0.2rem 0.4rem;
+  border-bottom: 2px solid var(--ww-accent);
+  margin-bottom: 0.6rem;
+}
+
+.top-col > .board { flex: 1; }   /* board grows to fill, More stays at the bottom */
+.top-col > .link-button { align-self: flex-start; margin-top: 0.6rem; }
+
+.more-section { margin-top: 0.5rem; }
+.more-section[hidden] { display: none; }
+.more-section .table-wrap { margin-top: 0.4rem; }
+
+.sub-title {
+  margin: 1.2rem 0 0.4rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ww-muted);
+}

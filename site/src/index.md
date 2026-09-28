@@ -91,10 +91,14 @@ const span = played
 </div>
 
 ```js
+// Filters: collapsed by default; the <details> is not "open" on load.
 display(
-  html`<div class="filter-bar print-hide">
-    ${[yearInput, monthsInput, oppositionInput, venueInput, outcomeInput, inningsInput, minInnsInput]}
-  </div>`
+  html`<details class="filter-panel print-hide">
+    <summary>Filters <span class="hint">· ${year}${opposition ? ` · ${opposition}` : ""}${venue ? ` · ${venue}` : ""}${outcome ? ` · ${outcome}` : ""}</span></summary>
+    <div class="filter-bar">
+      ${[yearInput, monthsInput, oppositionInput, venueInput, outcomeInput, inningsInput, minInnsInput]}
+    </div>
+  </details>`
 );
 ```
 
@@ -151,24 +155,64 @@ display(
 ```
 
 <div class="section-title">
-  <h2>Batting</h2>
-  <span class="hint">Rate boards need ${minInns}+ innings</span>
+  <h2>Leaders</h2>
+  <span class="hint">Press More to open the full stats for a discipline</span>
 </div>
 
 ```js
 const battingRated = batting.filter((r) => r.Inns >= minInns);
+const bowlingRated = bowling.filter((r) => r.Inns >= minInns);
 
-display(
-  html`<div class="board-grid">
-    ${board({
-      title: "Most runs",
-      rows: [...batting].sort(descending("Runs")),
-      nameKey: "player",
-      columns: [
-        { key: "Runs", format: int },
-        { key: "Inns", label: "innings", format: int },
-      ],
-    })}
+const topStands = [...partnerships.stands].sort(descending("Partnership")).map((s) => ({
+  ...s,
+  stand: `${s.Partnership}${s.Unbeaten === "Yes" ? "*" : ""}`,
+  context: `${s.Balls} balls · vs ${s.opposition}`,
+}));
+
+// ---- the four headline boards -------------------------------------------
+const topBatting = board({
+  title: "Most runs",
+  rows: [...batting].sort(descending("Runs")),
+  nameKey: "player",
+  columns: [
+    { key: "Runs", format: int },
+    { key: "Inns", label: "innings", format: int },
+  ],
+});
+
+const topBowling = board({
+  title: "Most wickets",
+  rows: [...bowling].sort(descending("Wkts")),
+  nameKey: "player",
+  columns: [
+    { key: "Wkts", format: int },
+    { key: "Inns", label: "innings", format: int },
+  ],
+});
+
+const topFielding = board({
+  title: "Most dismissals",
+  rows: [...fielding].sort(descending("Dismissals")),
+  nameKey: "player",
+  columns: [
+    { key: "Dismissals", format: int },
+    { key: "Catches", label: "catches", format: int },
+  ],
+});
+
+const topPartnerships = board({
+  title: "Highest partnerships",
+  note: "* denotes an unbroken stand",
+  rows: topStands,
+  nameKey: "Pair",
+  columns: [
+    { key: "stand", format: (v) => v },
+    { key: "context", label: "", format: (v) => v },
+  ],
+});
+
+// ---- the "More" content --------------------------------------------------
+const battingMore = html`<div class="board-grid">
     ${board({
       title: "Most fours",
       rows: [...batting].sort(descending("Fours")),
@@ -207,15 +251,9 @@ display(
         { key: "Runs", label: "runs", format: int },
       ],
     })}
-  </div>`
-);
-```
-
-<details class="print-hide"><summary>Full batting table</summary>
-
-```js
-display(
-  table([...batting].sort(descending("Runs")), [
+  </div>
+  <h3 class="sub-title">Full batting table</h3>
+  ${table([...batting].sort(descending("Runs")), [
     { key: "player", label: "Player", align: "left" },
     { key: "Inns", label: "Inns" },
     { key: "Runs", label: "Runs" },
@@ -227,31 +265,9 @@ display(
     { key: "Fours", label: "4s" },
     { key: "Sixes", label: "6s" },
     { key: "MVP", label: "MVP", format: num(2) },
-  ])
-);
-```
+  ])}`;
 
-</details>
-
-<div class="section-title">
-  <h2>Bowling</h2>
-  <span class="hint">Rate boards need ${minInns}+ innings</span>
-</div>
-
-```js
-const bowlingRated = bowling.filter((r) => r.Inns >= minInns);
-
-display(
-  html`<div class="board-grid">
-    ${board({
-      title: "Most wickets",
-      rows: [...bowling].sort(descending("Wkts")),
-      nameKey: "player",
-      columns: [
-        { key: "Wkts", format: int },
-        { key: "Inns", label: "innings", format: int },
-      ],
-    })}
+const bowlingMore = html`<div class="board-grid">
     ${board({
       title: "Best economy",
       note: `Runs per over · minimum ${minInns} innings`,
@@ -282,15 +298,9 @@ display(
         { key: "Wkts", label: "wickets", format: int },
       ],
     })}
-  </div>`
-);
-```
-
-<details class="print-hide"><summary>Full bowling table</summary>
-
-```js
-display(
-  table([...bowling].sort(descending("Wkts")), [
+  </div>
+  <h3 class="sub-title">Full bowling table</h3>
+  ${table([...bowling].sort(descending("Wkts")), [
     { key: "player", label: "Player", align: "left" },
     { key: "Inns", label: "Inns" },
     { key: "Overs", label: "Overs", format: num(1) },
@@ -302,65 +312,20 @@ display(
     { key: "Econ", label: "Econ", format: num(2) },
     { key: "SR", label: "SR", format: num(1) },
     { key: "MVP", label: "MVP", format: num(2) },
-  ])
-);
-```
+  ])}`;
 
-</details>
+const fieldingMore = html`<h3 class="sub-title">Full fielding table</h3>
+  ${table([...fielding].sort(descending("Dismissals")), [
+    { key: "player", label: "Player", align: "left" },
+    { key: "Catches", label: "Ct" },
+    { key: "Stumpings", label: "St" },
+    { key: "RunOuts", label: "RO" },
+    { key: "Assists", label: "Assists" },
+    { key: "Dismissals", label: "Total" },
+    { key: "MVP", label: "MVP", format: num(2) },
+  ])}`;
 
-<div class="section-title">
-  <h2>Fielding</h2>
-  <span class="hint">Catches + stumpings + run outs + assists</span>
-</div>
-
-```js
-display(
-  html`<div class="board-grid" style="grid-template-columns: minmax(240px, 1fr) 2.2fr;">
-    ${board({
-      title: "Most dismissals",
-      rows: [...fielding].sort(descending("Dismissals")),
-      nameKey: "player",
-      columns: [
-        { key: "Dismissals", format: int },
-        { key: "Catches", label: "catches", format: int },
-      ],
-    })}
-    ${table([...fielding].sort(descending("Dismissals")), [
-      { key: "player", label: "Player", align: "left" },
-      { key: "Catches", label: "Ct" },
-      { key: "Stumpings", label: "St" },
-      { key: "RunOuts", label: "RO" },
-      { key: "Assists", label: "Assists" },
-      { key: "Dismissals", label: "Total" },
-      { key: "MVP", label: "MVP", format: num(2) },
-    ])}
-  </div>`
-);
-```
-
-<div class="section-title">
-  <h2>Partnerships</h2>
-  <span class="hint">* denotes an unbroken stand</span>
-</div>
-
-```js
-const topStands = [...partnerships.stands].sort(descending("Partnership")).map((s) => ({
-  ...s,
-  stand: `${s.Partnership}${s.Unbeaten === "Yes" ? "*" : ""}`,
-  context: `${s.Balls} balls · vs ${s.opposition}`,
-}));
-
-display(
-  html`<div class="board-grid">
-    ${board({
-      title: "Highest partnerships",
-      rows: topStands,
-      nameKey: "Pair",
-      columns: [
-        { key: "stand", format: (v) => v },
-        { key: "context", label: "", format: (v) => v },
-      ],
-    })}
+const partnershipsMore = html`<div class="board-grid">
     ${board({
       title: "Most partnership runs",
       note: "Runs added while at the crease",
@@ -381,15 +346,9 @@ display(
         { key: "Stands", label: "stands", format: int },
       ],
     })}
-  </div>`
-);
-```
-
-<details class="print-hide"><summary>All partnerships</summary>
-
-```js
-display(
-  table([...partnerships.stands].sort(descending("Partnership")), [
+  </div>
+  <h3 class="sub-title">All partnerships</h3>
+  ${table([...partnerships.stands].sort(descending("Partnership")), [
     { key: "date", label: "Date", align: "left", format: formatDate },
     { key: "opposition", label: "Opposition", align: "left" },
     { key: "wicket#", label: "Wkt" },
@@ -397,11 +356,48 @@ display(
     { key: "Partnership", label: "Runs" },
     { key: "Balls", label: "Balls" },
     { key: "Unbeaten", label: "Unbeaten" },
+  ])}`;
+
+// ---- wiring --------------------------------------------------------------
+const panels = [
+  { key: "batting", title: "Batting", top: topBatting, more: battingMore },
+  { key: "bowling", title: "Bowling", top: topBowling, more: bowlingMore },
+  { key: "fielding", title: "Fielding", top: topFielding, more: fieldingMore },
+  { key: "partnerships", title: "Partnerships", top: topPartnerships, more: partnershipsMore },
+];
+
+const sectionEls = new Map(
+  panels.map((p) => [
+    p.key,
+    html`<section class="more-section" hidden>
+      <div class="section-title"><h2>${p.title}</h2><span class="hint">Full stats</span></div>
+      ${p.more}
+    </section>`,
   ])
 );
-```
 
-</details>
+function toggle(key, button) {
+  const el = sectionEls.get(key);
+  const opening = el.hidden;
+  el.hidden = !opening;
+  button.textContent = opening ? "Less" : "More";
+  button.setAttribute("aria-expanded", String(opening));
+  if (opening) el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+display(
+  html`<div class="top-grid">
+    ${panels.map(
+      (p) => html`<div class="top-col">
+        <div class="top-head">${p.title}</div>
+        ${p.top}
+        <button class="link-button print-hide" aria-expanded="false" onclick=${(e) => toggle(p.key, e.currentTarget)}>More</button>
+      </div>`
+    )}
+  </div>
+  ${panels.map((p) => sectionEls.get(p.key))}`
+);
+```
 
 <div class="section-title"><h2>Results</h2></div>
 
