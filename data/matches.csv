@@ -1,4 +1,51 @@
 match_id,date,opposition,venue,result,captain,Win loss Margin,batted_first,our_runs,our_wickets,our_overs,opp_runs,opp_wickets,opp_overs,match_overs
+14339792,2025-01-01,RISING STAR CA,"Magna B (Turf), Chennai",Won,Seenu,6 wickets,No,125,4,19.0,122,10,29.5,29.5
+14374871,2025-01-04,BlueStar,"Mvr Ground - A, Chennai",Lost,Seenu,3 wickets,Yes,159,9,25.0,161,7,24.0,25.0
+14559058,2025-01-11,ACC SPARTANS 2021,"Indian Piston Limited, Chennai",Lost,Seenu,63 runs,No,129,10,19.5,192,10,29.2,29.2
+14639891,2025-01-14,Incofin cricket,"Marina Cricket Ground, Chennai",Lost,Seenu,5 wickets,Yes,108,7,20.0,109,5,19.1,20.0
+14717505,2025-01-18,Team Twister,"STAG Cricket Ground, Chennai",Won,Seenu,3 wickets,No,114,7,29.0,112,10,25.0,29.0
+14789314,2025-01-25,Orcas XI,"Mvr Ground - A, Chennai",Won,Seenu,50 runs,Yes,167,8,25.0,117,9,25.0,25.0
+15169165,2025-02-08,Titans XI,"Loyola College Ground A, Chennai",Lost,Seenu,15 runs,No,125,10,20.2,140,9,25.0,25.0
+15328278,2025-02-15,Spartanz Riders B,"Vivekananda College Cricket Ground, Chennai",Won,Seenu,20 runs,Yes,166,9,25.0,146,10,24.5,25.0
+15462065,2025-02-22,MDB11,"KVT Ground, Chennai",Won,Seenu,53 runs,Yes,230,9,24.0,177,10,24.0,24.0
+15630715,2025-03-01,DEADLY HITTERS APL,"KPS Cricket Ground,Tiruvallur, Tiruvallur",Lost,Seenu,16 runs,No,191,10,29.2,207,5,30.0,30.0
+15766030,2025-03-08,Eswar Cricket Academy,"Eswar Cricket Academy Cricket Ground, Chennai",Won,Seenu,5 wickets,No,198,5,22.1,194,6,25.0,25.0
+15892680,2025-03-15,SUPERNOVA,"STAG Cricket Ground, Chennai",Won,Seenu,6 wickets,No,127,4,25.1,126,10,29.1,29.1
+15941689,2025-03-22,Willow Warriors,"PSM Sports Village, Chennai",Won,Seenu,4 wickets,No,137,6,18.1,136,10,28.0,28.0
+16119492,2025-03-29,Retro Squad,"Puzhul Kvt, Chennai",Won,Seenu,74 runs,Yes,253,7,26.0,179,8,26.0,26.0
+16139068,2025-04-12,Peppy Inns CC,"STAG Cricket Ground, Chennai",Lost,Seenu,4 wickets,Yes,161,9,30.0,162,6,27.1,30.0
+16159142,2025-04-05,Team Twister,"PSM Sports Village, Chennai",Won,Seenu,4 wickets,No,161,6,23.1,160,10,28.5,28.5
+16638059,2025-04-19,Velu-CC,"24K KVT Puzhal, Chennai",Lost,Seenu,2 wickets,Yes,159,11,25.2,162,8,19.4,25.2
+16791311,2025-04-26,MASTER CRICKET CLUB TEAM,"STAG Cricket Ground, Chennai",Won,Seenu,10 runs,Yes,201,9,30.0,191,9,30.0,30.0
+16914091,2025-05-01,Captains XIs,"STAG Cricket Ground, Chennai",Won,Seenu,108 runs,Yes,236,10,28.4,128,10,21.0,28.4
+16949242,2025-05-03,RUF CC,"Puratham Magna Cricket Ground, Chennai",Won,Seenu,2 wickets,No,168,8,27.2,166,10,26.2,27.2
+16968145,2025-05-10,SHIVAJI CRICKET CLUB,"STAG Cricket Ground, Chennai",Lost,Seenu,10 wickets,Yes,111,10,24.3,112,0,11.4,24.3
+17077908,2025-05-17,Thunderbolts CC,"Marina Cricket Ground, Chennai",Lost,Seenu,121 runs,No,160,10,28.1,281,7,30.0,30.0
+17280387,2025-05-24,24cc,"Marina Cricket Ground, Chennai",Lost,Seenu,121 runs,No,175,10,26.5,296,5,30.0,30.0
+17424196,2025-05-31,Willow Warriors,"PSM Sports Village, Chennai",Won,Seenu,10 wickets,No,84,0,8.3,78,10,19.4,19.4
+17602912,2025-06-07,Zha Club Cricket,"STAG Cricket Ground, Chennai",Won,Seenu,19 runs,Yes,263,6,30.0,244,9,30.0,30.0
+17813444,2025-06-21,11 CAPS,"STAG Cricket Ground, Chennai",Won,Seenu,73 runs,Yes,275,9,30.0,202,8,30.0,30.0
+17813895,2025-06-14,Creative Elevens,"Loyola College Ground A, Chennai",Won,Seenu,181 runs,Yes,242,4,20.0,61,10,14.2,20.0
+17977116,2025-06-28,Game Ball CA,"PSM Sports Village, Chennai",Lost,Seenu,18 runs,No,172,10,29.3,190,8,30.0,30.0
+18160516,2025-07-05,LEX XI,"Marina Cricket Ground, Chennai",Won,Seenu,36 runs,Yes,221,8,30.0,185,7,30.0,30.0
+18224185,2025-07-12,SATURDAY DUGOUT,"Puzhul Kvt, Chennai",Lost,Seenu,7 wickets,Yes,62,10,12.3,66,3,7.4,12.3
+18260728,2025-07-12,SATURDAY DUGOUT,"Rising Star Ground, Chennai",Won,Seenu,5 wickets,No,129,5,14.0,126,10,15.0,15.0
+18306916,2025-07-19,The Royal Warriors,"PSM Sports Village, Chennai",Won,Seenu,6 wickets,No,109,4,19.4,107,10,20.2,20.2
+18412232,2025-07-26,Talent 2 Connect,"Mvr Ground - A, Chennai",Won,Seenu,9 wickets,No,105,1,22.1,101,8,25.0,25.0
+18551375,2025-08-02,Rouge knight,"STAG Cricket Ground, Chennai",Won,Seenu,3 wickets,No,126,7,24.2,125,10,26.2,26.2
+18557568,2025-08-09,V UNIQUE CA,"PSM Sports Village, Chennai",Lost,Seenu,21 runs,No,212,10,29.2,233,6,30.0,30.0
+18652555,2025-08-16,Black Panthers,"STAG Cricket Ground, Chennai",Won,Srinivasan V,9 runs,Yes,177,6,30.0,168,10,30.0,30.0
+18789118,2025-08-23,Hangover XI (SHO),"STAG Cricket Ground, Chennai",Lost,Srinivasan V,46 runs,No,104,10,28.0,150,10,30.0,30.0
+19061037,2025-09-13,Rebel Stars CC,"Puratham Magna Cricket Ground, Chennai",Won,Vivek H,56 runs,Yes,227,7,30.0,171,10,29.5,30.0
+19218163,2025-09-27,FRIENDZ 11,"PSM Sports Village, Chennai",Lost,Vivek H,12 runs,No,162,8,30.0,174,10,29.2,30.0
+19540188,2025-10-11,THE AVMCC,"Omega International School, Chennai",Lost,Vivek H,89 runs,No,140,8,20.0,229,7,20.0,20.0
+19875349,2025-11-01,Falcons United CC,"LOYOLA-B, Chennai",Won,Vivek H,66 runs,Yes,178,10,24.5,112,10,16.1,24.5
+19993636,2025-11-15,SOSME,"PSM Sports Village, Chennai",Lost,Vivek H,43 runs,No,141,8,30.0,184,10,29.0,30.0
+20015534,2025-11-08,Titans Squad CC,"PSM Sports Village, Chennai",Won,Vivek H,13 runs,Yes,116,8,20.0,103,10,20.0,20.0
+20650717,2025-12-14,DEADLY HITTERS APL,"PSM Sports Village, Chennai",Won,Vivek H,6 wickets,No,81,4,15.0,79,10,15.1,15.1
+20651056,2025-12-13,FHB,"LOYOLA-B, Chennai",Lost,Seenu,38 runs,No,97,10,17.1,135,10,16.5,17.1
+20695271,2025-12-20,Youngsters Cricket Club,"PSM Sports Village, Chennai",Lost,Vivek H,26 runs,No,108,10,25.1,134,10,24.3,25.1
+20998794,2025-12-28,Nellai Eagles,"PSM Sports Village, Chennai",Won,Vivek H,6 wickets,No,84,4,10.1,80,10,13.4,13.4
 21158832,2026-01-01,MCC Avadi,"Mvr Ground - A, Chennai",Lost,Vivek H,32 runs,No,120,10,18.4,152,6,20.0,20.0
 21175590,2026-01-03,Dark Knight,"Mvr Ground - A, Chennai",Won,Vivek H,164 runs,Yes,226,8,30.0,62,10,17.4,30.0
 21360655,2026-01-17,Padma Sarangapani CA.,"STAG Cricket Ground, Chennai",Lost,Daniel,162 runs,No,108,10,25.0,270,5,30.0,30.0

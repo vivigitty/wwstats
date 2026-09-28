@@ -1,4 +1,361 @@
 match_id,wicket#,player1_name,player2_name,Partnership,Balls,Unbeaten
+14339792,1,Vancheeswaran,K Natarajan,27,19,No
+14339792,2,Prasad SK,K Natarajan,15,20,No
+14339792,3,Prasad SK,VK,29,30,No
+14339792,4,Vanchy,VK,26,26,No
+14339792,5,Vanchy,Vivek H,28,19,Yes
+14374871,1,VK,Vancheeswaran,2,7,No
+14374871,2,VK,Prasad SK,28,26,No
+14374871,3,VK,daniel,44,44,No
+14374871,4,VK,Vivek H,15,11,No
+14374871,5,Vanchy,Vivek H,30,31,No
+14374871,6,Vanchy,Srinivasan V,2,6,No
+14374871,8,Vanchy,Gopalakrishnan,25,16,No
+14374871,9,Vaidy,Gopalakrishnan,12,8,No
+14374871,9,Seenu,Gopalakrishnan,1,1,Yes
+14559058,1,VK,K Natarajan,37,19,No
+14559058,2,Prasad SK,K Natarajan,24,19,No
+14559058,3,daniel,K Natarajan,0,1,No
+14559058,4,Vivek H,K Natarajan,0,4,No
+14559058,5,Vivek H,Vanchy,0,3,No
+14559058,6,Vivek H,Srinivasan V,3,7,No
+14559058,8,Vaidy,Srinivasan V,13,20,No
+14559058,9,Gopalakrishnan,Srinivasan V,43,37,No
+14559058,10,Seenu,Srinivasan V,9,9,No
+14639891,1,VK,Vancheeswaran,7,9,No
+14639891,2,Prasad SK,Vancheeswaran,1,5,No
+14639891,3,daniel,Vancheeswaran,12,18,No
+14639891,4,Vivek H,Vancheeswaran,3,6,No
+14639891,5,Vivek H,Vaidy,11,16,No
+14639891,6,Vivek H,Vanchy,63,60,No
+14639891,7,Vivek H,Sridhar Ganesan,11,6,Yes
+14717505,1,VK,Vaidy,7,17,No
+14717505,2,Prasad SK,Vaidy,8,21,No
+14717505,3,daniel,Vaidy,1,6,No
+14717505,4,Vivek H,Vaidy,67,87,No
+14717505,5,Vanchy,Vaidy,1,1,No
+14717505,6,Vanchy,Srinivasan V,27,40,No
+14717505,7,Vanchy,Gopalakrishnan,1,1,No
+14717505,8,Seenu,Gopalakrishnan,2,1,Yes
+14789314,1,Vaidy,K Natarajan,10,8,No
+14789314,2,Vaidy,VK,4,10,No
+14789314,3,Vaidy,daniel,40,44,No
+14789314,4,Vivek H,daniel,8,6,No
+14789314,5,Vivek H,Prasad SK,57,49,No
+14789314,6,Vivek H,Vanchy,10,14,No
+14789314,8,Siddhesh,Vanchy,38,19,No
+14789314,8,Siddhesh,Srinivasan V,0,0,Yes
+15169165,1,Vancheeswaran,K Natarajan,0,1,No
+15169165,2,Krishna K,K Natarajan,4,7,No
+15169165,3,daniel,K Natarajan,0,1,No
+15169165,4,Vivek H,K Natarajan,32,17,No
+15169165,5,Vivek H,Prasad SK,47,43,No
+15169165,6,Vivek H,Vanchy,18,18,No
+15169165,8,Vivek H,Vaidy,22,23,No
+15169165,9,Vivek H,Srinivasan V,1,8,No
+15169165,10,Seenu,Srinivasan V,1,4,No
+15328278,1,Vaidy,K Natarajan,19,26,No
+15328278,2,Vaidy,VK,29,33,No
+15328278,3,daniel,VK,26,26,No
+15328278,4,daniel,Vivek H,23,24,No
+15328278,5,Vancheeswaran,Vivek H,18,14,No
+15328278,6,Srinivasan V,Vivek H,0,1,No
+15328278,8,Seenu,Vivek H,40,19,No
+15328278,9,Gopalakrishnan,Vivek H,0,1,No
+15328278,9,Shankar,Vivek H,11,6,Yes
+15462065,1,Prasad SK,Vaidy,34,17,No
+15462065,2,K Natarajan,Vaidy,84,51,No
+15462065,3,daniel,Vaidy,11,8,No
+15462065,4,daniel,VK,30,21,No
+15462065,5,daniel,Vivek H,29,15,No
+15462065,6,Siddhesh,Vivek H,21,16,No
+15462065,7,Vanchy,Vivek H,16,9,No
+15462065,8,Rajshekhar,Vivek H,1,3,No
+15462065,9,Srinivasan V,Vivek H,4,4,Yes
+15630715,1,Vaidy,K Natarajan,72,45,No
+15630715,2,Vaidy,Prasad SK,24,28,No
+15630715,3,Vancheeswaran,Prasad SK,20,13,No
+15630715,4,Vivek H,Prasad SK,12,8,No
+15630715,5,Vivek H,VK,27,28,No
+15630715,6,Vivek H,Srinivasan V,19,19,No
+15630715,7,Vivek H,Gopalakrishnan,10,11,No
+15630715,8,Vivek H,Seenu,2,6,No
+15630715,9,Vivek H,Shankar,0,5,No
+15630715,10,Krishnan,Shankar,5,13,No
+15766030,1,Srinivasan V,K Natarajan,0,1,No
+15766030,2,Prasad SK,K Natarajan,64,43,No
+15766030,3,daniel,K Natarajan,71,42,No
+15766030,4,Vivek H,K Natarajan,41,28,No
+15766030,5,Vivek H,Vancheeswaran,17,16,No
+15766030,6,VK,Vancheeswaran,5,3,Yes
+15892680,1,Krishna K,Sathya,7,4,No
+15892680,2,Vaidy,Sathya,33,37,No
+15892680,3,Vaidy,daniel,1,2,No
+15892680,4,Vivek H,daniel,19,16,No
+15892680,5,Prasad SK,daniel,67,92,Yes
+15941689,1,Vanchy,K Natarajan,10,9,No
+15941689,2,VK,K Natarajan,50,32,No
+15941689,3,VK,daniel,19,20,No
+15941689,4,VK,Vivek H,0,1,No
+15941689,5,VK,Vancheeswaran,10,13,No
+15941689,6,VK,Rajshekhar,46,32,No
+15941689,7,VK,Srinivasan V,2,2,Yes
+16119492,1,Vaidy,K Natarajan,61,30,No
+16119492,2,VK,K Natarajan,0,2,No
+16119492,3,daniel,K Natarajan,92,55,No
+16119492,4,daniel,Prasad SK,9,8,No
+16119492,5,daniel,Vancheeswaran,21,18,No
+16119492,6,daniel,Vanchy,23,17,No
+16119492,7,daniel,Rajshekhar,47,26,Yes
+16139068,1,Vanchy,K Natarajan,26,21,No
+16139068,2,VK,K Natarajan,45,49,No
+16139068,3,VK,Prasad SK,10,23,No
+16139068,4,VK,Vivek H,55,51,No
+16139068,5,Siddhesh,Vivek H,2,5,No
+16139068,6,Siddhesh,Vancheeswaran,12,11,No
+16139068,8,Srinivasan V,Vancheeswaran,5,7,No
+16139068,9,Vaidy,Vancheeswaran,4,8,No
+16139068,9,Seenu,Vancheeswaran,2,5,Yes
+16159142,1,Vanchy,K Natarajan,43,33,No
+16159142,2,Vanchy,VK,81,67,No
+16159142,3,Prasad SK,VK,0,4,No
+16159142,4,Prasad SK,Vivek H,9,11,No
+16159142,5,Vancheeswaran,Vivek H,4,4,No
+16159142,6,Srinivasan V,Vivek H,15,12,No
+16159142,7,Srinivasan V,Vaidy,9,8,Yes
+16638059,1,Sathya,Vancheeswaran,22,11,No
+16638059,2,Prasad SK,Vancheeswaran,2,4,No
+16638059,3,daniel,Vancheeswaran,9,22,No
+16638059,4,daniel,Vivek H,32,35,No
+16638059,5,daniel,Syed Ayan,57,36,No
+16638059,6,daniel,Rajshekhar,0,1,No
+16638059,8,Vanchy,Rajshekhar,15,18,No
+16638059,9,Vanchy,Srinivasan V,1,7,No
+16638059,10,Vanchy,Vaidy,12,4,No
+16638059,11,Seenu,Vaidy,9,14,No
+16791311,1,Prasad SK,Vancheeswaran,42,32,No
+16791311,2,VK,Vancheeswaran,77,59,No
+16791311,3,VK,Vaidy,5,12,No
+16791311,4,Vivek H,Vaidy,3,6,No
+16791311,5,Vanchy,Vaidy,18,28,No
+16791311,6,Rajshekhar,Vaidy,14,10,No
+16791311,8,Kushagra Singh,Vaidy,35,29,No
+16791311,9,Srinivasan V,Vaidy,0,1,No
+16791311,9,Shankar,Vaidy,7,3,Yes
+16914091,1,Vancheeswaran,K Natarajan,92,42,No
+16914091,2,VK,K Natarajan,56,47,No
+16914091,3,VK,Prasad SK,13,14,No
+16914091,4,Vivek H,Prasad SK,11,7,No
+16914091,5,Vivek H,Vanchy,1,5,No
+16914091,6,Vivek H,Sathya,14,14,No
+16914091,8,Vivek H,Vaidy,18,21,No
+16914091,9,Srinivasan V,Vaidy,8,9,No
+16914091,10,Seenu,Vaidy,23,13,No
+16949242,1,Vanchy,K Natarajan,45,39,No
+16949242,2,Vanchy,VK,41,37,No
+16949242,3,Vanchy,Vaidy,3,12,No
+16949242,4,Vivek H,Vaidy,46,43,No
+16949242,5,Vivek H,Prasad SK,19,12,No
+16949242,6,Siddhesh,Prasad SK,2,4,No
+16949242,8,Siddhesh,Srinivasan V,5,12,No
+16949242,8,Siddhesh,Gopalakrishnan,7,5,Yes
+16968145,1,Prasad SK,Vancheeswaran,35,33,No
+16968145,2,VK,Vancheeswaran,1,3,No
+16968145,3,VK,daniel,1,4,No
+16968145,4,VK,Vivek H,2,5,No
+16968145,5,Vanchy,Vivek H,1,2,No
+16968145,6,Vanchy,Seenu,22,28,No
+16968145,7,Vaidy,Seenu,12,27,No
+16968145,9,Srinivasan V,Seenu,1,6,No
+16968145,10,Gopalakrishnan,Seenu,36,39,No
+17077908,1,Vaidy,K Natarajan,52,53,No
+17077908,2,Vaidy,VK,26,19,No
+17077908,3,Prasad SK,VK,8,8,No
+17077908,4,Prasad SK,Vivek H,0,1,No
+17077908,5,Prasad SK,Rajshekhar,49,48,No
+17077908,6,Siddhesh,Rajshekhar,1,1,No
+17077908,8,Vanchy,Rajshekhar,8,14,No
+17077908,9,Srinivasan V,Rajshekhar,4,5,No
+17077908,10,Gopalakrishnan,Rajshekhar,12,20,No
+17280387,1,Prasad SK,K Natarajan,7,3,No
+17280387,2,Prasad SK,VK,35,16,No
+17280387,3,daniel,VK,45,24,No
+17280387,4,Vivek H,VK,19,12,No
+17280387,5,Vanchy,VK,8,4,No
+17280387,6,Vaidy,VK,4,3,No
+17280387,8,Vaidy,Gopalakrishnan,42,63,No
+17280387,9,Srinivasan V,Gopalakrishnan,2,6,No
+17280387,10,Seenu,Gopalakrishnan,13,30,No
+17424196,1,Prasad SK,K Natarajan,84,51,Yes
+17602912,1,Vancheeswaran,Rahul,65,45,No
+17602912,2,Vancheeswaran,VK,0,2,No
+17602912,3,Vancheeswaran,K Natarajan,45,30,No
+17602912,4,Vancheeswaran,Vivek H,54,39,No
+17602912,5,daniel,Vivek H,9,9,No
+17602912,6,daniel,Rajshekhar,7,12,No
+17602912,7,daniel,Prasad SK,83,43,Yes
+17813444,1,Vancheeswaran,K Natarajan,9,8,No
+17813444,2,VK,K Natarajan,68,31,No
+17813444,3,VK,daniel,10,9,No
+17813444,4,Vivek H,daniel,62,44,No
+17813444,5,Rahul,daniel,61,50,No
+17813444,6,Rahul,Prasad SK,25,18,No
+17813444,8,Rahul,Siddhesh,27,12,No
+17813444,9,Rahul,Rajshekhar,13,8,No
+17813444,9,Vaidy,Rajshekhar,0,0,Yes
+17813895,1,Rahul,K Natarajan,187,82,No
+17813895,2,Rahul,Prasad SK,19,14,No
+17813895,3,daniel,Prasad SK,12,8,No
+17813895,4,daniel,Rajshekhar,8,5,No
+17813895,5,Srinivasan V,Rajshekhar,16,11,Yes
+17977116,1,Vancheeswaran,K Natarajan,12,10,No
+17977116,2,VK,K Natarajan,17,8,No
+17977116,3,daniel,K Natarajan,8,3,No
+17977116,4,daniel,Vivek H,1,4,No
+17977116,5,daniel,Rahul,18,30,No
+17977116,6,Vaidy,Rahul,76,85,No
+17977116,8,Vaidy,Rajshekhar,6,13,No
+17977116,9,Srinivasan V,Rajshekhar,15,13,No
+17977116,10,Seenu,Rajshekhar,19,11,No
+18160516,1,Vivek H,K Natarajan,35,14,No
+18160516,2,Vivek H,VK,4,11,No
+18160516,3,Vivek H,daniel,98,74,No
+18160516,4,Vivek H,Vancheeswaran,12,8,No
+18160516,5,Vivek H,Rahul,25,25,No
+18160516,6,Vivek H,Siddhesh,6,12,No
+18160516,8,Vivek H,Srinivasan V,35,32,No
+18160516,8,Rajshekhar,Srinivasan V,6,4,Yes
+18224185,1,Vancheeswaran,K Natarajan,2,5,No
+18224185,2,Vancheeswaran,VK,7,5,No
+18224185,3,Vancheeswaran,daniel,4,11,No
+18224185,4,Vancheeswaran,Siddhesh,2,7,No
+18224185,5,Prasad SK,Siddhesh,26,27,No
+18224185,6,Vivek H,Siddhesh,9,5,No
+18224185,8,Srinivasan V,Siddhesh,6,8,No
+18224185,9,Vaidy,Siddhesh,0,1,No
+18224185,10,Seenu,Siddhesh,6,6,No
+18260728,1,Prasad SK,K Natarajan,15,9,No
+18260728,2,VK,K Natarajan,46,31,No
+18260728,3,daniel,K Natarajan,4,7,No
+18260728,4,Vivek H,K Natarajan,57,33,No
+18260728,5,Siddhesh,K Natarajan,0,2,No
+18260728,6,Vancheeswaran,K Natarajan,7,2,Yes
+18306916,1,Prasad SK,K Natarajan,24,16,No
+18306916,2,Prasad SK,VK,31,34,No
+18306916,3,Prasad SK,Siddhesh,27,40,No
+18306916,4,Prasad SK,Vivek H,21,22,No
+18306916,5,Rahul,Vivek H,6,6,Yes
+18412232,1,Vancheeswaran,K Natarajan,60,55,No
+18412232,2,Krishna K,K Natarajan,45,78,Yes
+18551375,1,Prasad SK,K Natarajan,25,17,No
+18551375,2,Prasad SK,VK,11,12,No
+18551375,3,Prasad SK,Rahul,35,28,No
+18551375,4,Vivek H,Rahul,15,18,No
+18551375,5,daniel,Rahul,3,11,No
+18551375,6,daniel,Rajshekhar,12,21,No
+18551375,7,daniel,Srinivasan V,25,39,Yes
+18557568,1,Prasad SK,Vancheeswaran,10,8,No
+18557568,2,Prasad SK,VK,59,52,No
+18557568,3,daniel,VK,57,45,No
+18557568,4,Vivek H,VK,11,12,No
+18557568,5,Vivek H,Rahul,46,32,No
+18557568,6,Srinivasan V,Rahul,13,14,No
+18557568,8,Srinivasan V,Seenu,16,9,No
+18557568,9,Srinivasan V,Vaidy,0,1,No
+18557568,10,Shankar,Vaidy,0,3,No
+18652555,1,Prasad SK,K Natarajan,12,17,No
+18652555,2,Prasad SK,VK,81,91,No
+18652555,3,daniel,VK,38,30,No
+18652555,4,daniel,Vivek H,2,4,No
+18652555,5,Siddhesh,Vivek H,12,10,No
+18652555,6,Vancheeswaran,Vivek H,3,5,No
+18652555,7,Vaidy,Vivek H,29,23,Yes
+18789118,1,Prasad SK,Vancheeswaran,17,27,No
+18789118,2,Prasad SK,VK,4,7,No
+18789118,3,Prasad SK,daniel,13,30,No
+18789118,4,Prasad SK,Siddhesh,7,12,No
+18789118,5,Rahul,Siddhesh,0,3,No
+18789118,6,Rahul,K Natarajan,1,2,No
+18789118,8,Rahul,Vivek H,36,58,No
+18789118,9,Vaidy,Vivek H,5,8,No
+18789118,10,Srinivasan V,Vivek H,21,21,No
+19061037,1,Prasad SK,K Natarajan,97,44,No
+19061037,2,VK,K Natarajan,17,12,No
+19061037,3,VK,daniel,16,28,No
+19061037,4,VK,Vivek H,5,8,No
+19061037,5,Vancheeswaran,Vivek H,62,57,No
+19061037,6,Vancheeswaran,Siddhesh,28,29,No
+19061037,7,Vaidy,Siddhesh,2,2,Yes
+19218163,1,Prasad SK,K Natarajan,14,11,No
+19218163,2,Prasad SK,VK,22,27,No
+19218163,3,Prasad SK,daniel,40,44,No
+19218163,4,Vivek H,daniel,26,29,No
+19218163,5,Vivek H,Vancheeswaran,13,22,No
+19218163,6,Rajshekhar,Vancheeswaran,36,38,No
+19218163,8,Siddhesh,Vancheeswaran,3,4,No
+19218163,8,Vaidy,Vancheeswaran,8,5,Yes
+19540188,1,Prasad SK,K Natarajan,41,25,No
+19540188,2,Prasad SK,VK,0,10,No
+19540188,3,daniel,VK,0,3,No
+19540188,4,daniel,Siddhesh,0,2,No
+19540188,5,daniel,Vancheeswaran,55,33,No
+19540188,6,Seenu,Vancheeswaran,16,15,No
+19540188,8,Vaidy,Vancheeswaran,28,32,No
+19540188,8,Shankar,Vancheeswaran,0,0,Yes
+19875349,1,Prasad SK,K Natarajan,1,2,No
+19875349,2,Prasad SK,Krishna K,65,61,No
+19875349,3,daniel,Krishna K,22,16,No
+19875349,4,daniel,Vivek H,23,12,No
+19875349,5,Vancheeswaran,Vivek H,15,14,No
+19875349,6,Vancheeswaran,Rahul,0,2,No
+19875349,8,Vancheeswaran,Rajshekhar,50,39,No
+19875349,9,Vancheeswaran,Seenu,2,2,No
+19875349,10,Shankar,Seenu,0,1,No
+19993636,1,Vancheeswaran,Rajakumar,38,51,No
+19993636,2,Vancheeswaran,Siddhesh,5,9,No
+19993636,3,Vancheeswaran,daniel,25,31,No
+19993636,4,Vivek H,daniel,2,4,No
+19993636,5,Rajesh Raman,daniel,1,4,No
+19993636,7,Gopalakrishnan,daniel,44,56,No
+19993636,8,Seenu,daniel,15,10,No
+19993636,8,Shankar,daniel,11,15,Yes
+20015534,1,VK,Vancheeswaran,7,12,No
+20015534,2,VK,Siddhesh,13,12,No
+20015534,3,daniel,Siddhesh,32,32,No
+20015534,4,Vivek H,Siddhesh,3,8,No
+20015534,5,Vivek H,Rahul,38,33,No
+20015534,6,Rajshekhar,Rahul,17,15,No
+20015534,8,Gopalakrishnan,Rahul,4,7,No
+20015534,8,Seenu,Rahul,2,1,Yes
+20650717,1,Prasad SK,Vignesh Weekend Wickets,22,21,No
+20650717,2,VK,Vignesh Weekend Wickets,7,11,No
+20650717,3,daniel,Vignesh Weekend Wickets,2,10,No
+20650717,4,daniel,Vivek H,24,28,No
+20650717,5,daniel,Vancheeswaran,26,20,Yes
+20651056,1,Prasad SK,K Natarajan,13,11,No
+20651056,2,Krishna K,K Natarajan,10,3,No
+20651056,3,Krishna K,daniel,10,17,No
+20651056,4,Vignesh Weekend Wickets,daniel,22,14,No
+20651056,5,Vignesh Weekend Wickets,Vancheeswaran,0,2,No
+20651056,6,Vivek H,Vancheeswaran,15,16,No
+20651056,7,Rahul,Vancheeswaran,9,8,No
+20651056,8,Rahul,Vaidy,0,3,No
+20651056,9,Shankar,Vaidy,18,26,No
+20651056,10,Krishnan,Vaidy,0,3,No
+20695271,1,Prasad SK,K Natarajan,0,1,No
+20695271,2,VK,K Natarajan,35,20,No
+20695271,3,VK,daniel,5,6,No
+20695271,4,Vivek H,daniel,22,31,No
+20695271,5,Vancheeswaran,daniel,3,11,No
+20695271,6,Vignesh Weekend Wickets,daniel,33,56,No
+20695271,8,Vignesh Weekend Wickets,Rahul,10,20,No
+20695271,9,Srinivasan V,Rahul,0,3,No
+20695271,10,Seenu,Rahul,0,3,No
+20998794,1,Prasad SK,K Natarajan,31,10,No
+20998794,2,Prasad SK,VK,3,3,No
+20998794,3,Srinivasan V,VK,19,21,No
+20998794,4,Srinivasan V,Vivek H,0,4,No
+20998794,5,Vancheeswaran,Vivek H,31,23,Yes
 21158832,1,Prasad SK,K Natarajan,51,29,No
 21158832,2,Prasad SK,VK,17,15,No
 21158832,3,Prasad SK,daniel,24,30,No
