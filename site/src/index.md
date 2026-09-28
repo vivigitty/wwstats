@@ -77,6 +77,15 @@ const span = played
       matches.reduce((a, b) => (a.date > b.date ? a : b)).date
     )} ${year}`
   : "No matches in range";
+
+const topStands = [...partnerships.stands].sort(descending("Partnership")).map((s) => ({
+  ...s,
+  stand: `${s.Partnership}${s.Unbeaten === "Yes" ? "*" : ""}`,
+  context: `${s.Balls} balls · vs ${s.opposition}`,
+}));
+
+const battingRated = batting.filter((r) => r.Inns >= minInns);
+const bowlingRated = bowling.filter((r) => r.Inns >= minInns);
 ```
 
 <div class="masthead">
@@ -92,9 +101,12 @@ const span = played
 
 ```js
 display(
-  html`<div class="filter-bar print-hide">
-    ${[yearInput, monthsInput, oppositionInput, venueInput, outcomeInput, inningsInput, minInnsInput]}
-  </div>`
+  html`<details class="filter-disclosure print-hide">
+    <summary class="filter-summary">⚡ Filters & Options</summary>
+    <div class="filter-bar">
+      ${[yearInput, monthsInput, oppositionInput, venueInput, outcomeInput, inningsInput, minInnsInput]}
+    </div>
+  </details>`
 );
 ```
 
@@ -150,25 +162,100 @@ display(
 );
 ```
 
-<div class="section-title">
-  <h2>Batting</h2>
-  <span class="hint">Rate boards need ${minInns}+ innings</span>
-</div>
+<div class="section-title"><h2>Category Summaries</h2></div>
 
 ```js
-const battingRated = batting.filter((r) => r.Inns >= minInns);
+display(
+  html`<div class="summary-4col">
+    <!-- Column 1: Batting Summary -->
+    <div class="summary-card">
+      <div class="summary-card-header">
+        <h3>Batting</h3>
+      </div>
+      ${board({
+        title: "Most runs",
+        rows: [...batting].sort(descending("Runs")),
+        nameKey: "player",
+        columns: [
+          { key: "Runs", format: int },
+          { key: "Inns", label: "inns", format: int },
+        ],
+      })}
+      <button class="more-btn print-hide" onclick="document.getElementById('sec-batting').open = true; document.getElementById('sec-batting').scrollIntoView({behavior: 'smooth'});">
+        More Batting Stats ↓
+      </button>
+    </div>
 
+    <!-- Column 2: Bowling Summary -->
+    <div class="summary-card">
+      <div class="summary-card-header">
+        <h3>Bowling</h3>
+      </div>
+      ${board({
+        title: "Most wickets",
+        rows: [...bowling].sort(descending("Wkts")),
+        nameKey: "player",
+        columns: [
+          { key: "Wkts", format: int },
+          { key: "Inns", label: "inns", format: int },
+        ],
+      })}
+      <button class="more-btn print-hide" onclick="document.getElementById('sec-bowling').open = true; document.getElementById('sec-bowling').scrollIntoView({behavior: 'smooth'});">
+        More Bowling Stats ↓
+      </button>
+    </div>
+
+    <!-- Column 3: Fielding Summary -->
+    <div class="summary-card">
+      <div class="summary-card-header">
+        <h3>Fielding</h3>
+      </div>
+      ${board({
+        title: "Most dismissals",
+        rows: [...fielding].sort(descending("Dismissals")),
+        nameKey: "player",
+        columns: [
+          { key: "Dismissals", format: int },
+          { key: "Catches", label: "catches", format: int },
+        ],
+      })}
+      <button class="more-btn print-hide" onclick="document.getElementById('sec-fielding').open = true; document.getElementById('sec-fielding').scrollIntoView({behavior: 'smooth'});">
+        More Fielding Stats ↓
+      </button>
+    </div>
+
+    <!-- Column 4: Partnerships Summary -->
+    <div class="summary-card">
+      <div class="summary-card-header">
+        <h3>Partnerships</h3>
+      </div>
+      ${board({
+        title: "Highest partnerships",
+        rows: topStands,
+        nameKey: "Pair",
+        columns: [
+          { key: "stand", format: (v) => v },
+          { key: "context", label: "", format: (v) => v },
+        ],
+      })}
+      <button class="more-btn print-hide" onclick="document.getElementById('sec-partnerships').open = true; document.getElementById('sec-partnerships').scrollIntoView({behavior: 'smooth'});">
+        More Partnership Stats ↓
+      </button>
+    </div>
+  </div>`
+);
+```
+
+<!-- Detailed Section 1: Batting -->
+<details id="sec-batting" class="detail-section">
+  <summary class="detail-section-header">
+    <h2>Full Batting Breakdown & Leaderboards</h2>
+    <span class="hint">Rate boards need ${minInns}+ innings</span>
+  </summary>
+
+```js
 display(
   html`<div class="board-grid">
-    ${board({
-      title: "Most runs",
-      rows: [...batting].sort(descending("Runs")),
-      nameKey: "player",
-      columns: [
-        { key: "Runs", format: int },
-        { key: "Inns", label: "innings", format: int },
-      ],
-    })}
     ${board({
       title: "Most fours",
       rows: [...batting].sort(descending("Fours")),
@@ -211,7 +298,7 @@ display(
 );
 ```
 
-<details class="print-hide"><summary>Full batting table</summary>
+<div class="table-subheading">Full Batting Table</div>
 
 ```js
 display(
@@ -230,28 +317,18 @@ display(
   ])
 );
 ```
-
 </details>
 
-<div class="section-title">
-  <h2>Bowling</h2>
-  <span class="hint">Rate boards need ${minInns}+ innings</span>
-</div>
+<!-- Detailed Section 2: Bowling -->
+<details id="sec-bowling" class="detail-section">
+  <summary class="detail-section-header">
+    <h2>Full Bowling Breakdown & Leaderboards</h2>
+    <span class="hint">Rate boards need ${minInns}+ innings</span>
+  </summary>
 
 ```js
-const bowlingRated = bowling.filter((r) => r.Inns >= minInns);
-
 display(
   html`<div class="board-grid">
-    ${board({
-      title: "Most wickets",
-      rows: [...bowling].sort(descending("Wkts")),
-      nameKey: "player",
-      columns: [
-        { key: "Wkts", format: int },
-        { key: "Inns", label: "innings", format: int },
-      ],
-    })}
     ${board({
       title: "Best economy",
       note: `Runs per over · minimum ${minInns} innings`,
@@ -286,7 +363,7 @@ display(
 );
 ```
 
-<details class="print-hide"><summary>Full bowling table</summary>
+<div class="table-subheading">Full Bowling Table</div>
 
 ```js
 display(
@@ -305,62 +382,40 @@ display(
   ])
 );
 ```
-
 </details>
 
-<div class="section-title">
-  <h2>Fielding</h2>
-  <span class="hint">Catches + stumpings + run outs + assists</span>
-</div>
+<!-- Detailed Section 3: Fielding -->
+<details id="sec-fielding" class="detail-section">
+  <summary class="detail-section-header">
+    <h2>Full Fielding Breakdown & Table</h2>
+    <span class="hint">Catches + stumpings + run outs + assists</span>
+  </summary>
 
 ```js
 display(
-  html`<div class="board-grid" style="grid-template-columns: minmax(240px, 1fr) 2.2fr;">
-    ${board({
-      title: "Most dismissals",
-      rows: [...fielding].sort(descending("Dismissals")),
-      nameKey: "player",
-      columns: [
-        { key: "Dismissals", format: int },
-        { key: "Catches", label: "catches", format: int },
-      ],
-    })}
-    ${table([...fielding].sort(descending("Dismissals")), [
-      { key: "player", label: "Player", align: "left" },
-      { key: "Catches", label: "Ct" },
-      { key: "Stumpings", label: "St" },
-      { key: "RunOuts", label: "RO" },
-      { key: "Assists", label: "Assists" },
-      { key: "Dismissals", label: "Total" },
-      { key: "MVP", label: "MVP", format: num(2) },
-    ])}
-  </div>`
+  table([...fielding].sort(descending("Dismissals")), [
+    { key: "player", label: "Player", align: "left" },
+    { key: "Catches", label: "Ct" },
+    { key: "Stumpings", label: "St" },
+    { key: "RunOuts", label: "RO" },
+    { key: "Assists", label: "Assists" },
+    { key: "Dismissals", label: "Total" },
+    { key: "MVP", label: "MVP", format: num(2) },
+  ])
 );
 ```
+</details>
 
-<div class="section-title">
-  <h2>Partnerships</h2>
-  <span class="hint">* denotes an unbroken stand</span>
-</div>
+<!-- Detailed Section 4: Partnerships -->
+<details id="sec-partnerships" class="detail-section">
+  <summary class="detail-section-header">
+    <h2>Full Partnership Breakdown & Tables</h2>
+    <span class="hint">* denotes an unbroken stand</span>
+  </summary>
 
 ```js
-const topStands = [...partnerships.stands].sort(descending("Partnership")).map((s) => ({
-  ...s,
-  stand: `${s.Partnership}${s.Unbeaten === "Yes" ? "*" : ""}`,
-  context: `${s.Balls} balls · vs ${s.opposition}`,
-}));
-
 display(
   html`<div class="board-grid">
-    ${board({
-      title: "Highest partnerships",
-      rows: topStands,
-      nameKey: "Pair",
-      columns: [
-        { key: "stand", format: (v) => v },
-        { key: "context", label: "", format: (v) => v },
-      ],
-    })}
     ${board({
       title: "Most partnership runs",
       note: "Runs added while at the crease",
@@ -385,7 +440,7 @@ display(
 );
 ```
 
-<details class="print-hide"><summary>All partnerships</summary>
+<div class="table-subheading">All Partnerships Table</div>
 
 ```js
 display(
@@ -400,7 +455,6 @@ display(
   ])
 );
 ```
-
 </details>
 
 <div class="section-title"><h2>Results</h2></div>
